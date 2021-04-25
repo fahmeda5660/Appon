@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* ************************************NAVBAR START************************************ */
+nav {
+    position: absolute;
+    padding-top: 56px;
+    z-index: 111;
+    width: 100%;
+}
+
+nav .content {
+    display: flex;
+}
+
+nav .logo {
+    width: 20%;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+nav .nav-item {
+    width: 70%;
+}
+
+nav .nav-item {
+    text-align: right;
+}
+
+nav .nav-item ul li {
+    display: inline-block;
+    margin: 0 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 31px;
+    height: 31px;
+    text-transform: capitalize;
+    margin-top: 33px;
+}
+
+nav .nav-item ul li a {
+    color: #fdfdfe;
+    position: relative;
+}
+
+nav .nav-item ul li .active {
+    color: #744FA0;
+}
+
+nav .nav-item ul li a:hover {
+    color: #744FA0;
+}
+
+nav .nav-item ul li .underline:after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 18px;
+    height: 1px;
+    background: #744FA0;
+    margin-top: 5px;
+    transition: .4s;
+}
+
+nav .nav-item ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background: #744FA0;
+    margin-top: 5px;
+    transition: .4s;
+}
+
+nav .nav-item ul li a:hover:after {
+    width: 18px;
+}
+
+nav .button {
+    width: 10%;
+    margin-top: 41px;
+}
+
+nav .button a {
+    background: #744FA0;
+    padding: 6px 15px;
+    border-radius: 3px;
+    color: #fdfdfe;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+nav .button:hover a {
+    color: #744FA0;
+    background: #fdfdfe;
+    cursor: pointer;
+}
+
+/* ************************************NAVBAR END************************************ */
+
+/* ************************************BANNER START************************************ */
+#banner-part .banner {
+    background: url(../images/banner1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#banner-part .home {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 43%;
+    right: 51px;
+    z-index: 11;
+}
+
+#banner-part .home:hover {
+    color: #744fa0;
+}
+
+#banner-part .banner .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.7);
+    color: white;
+    text-align: right;
+    padding: 100px 0px;
+}
+
+#banner-part .banner .overlay .details {
+    margin-right: 38px;
+    margin-top: 130px;
+}
+
+#banner-part .banner .overlay h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+#banner-part .banner .overlay h1::first-letter {
+    color: #744FA0;
+}
+
+#banner-part .banner .overlay h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 75px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+#banner-part .banner .overlay h3:after {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 200px;
+    height: 1px;
+    background: #fff;
+    content: "";
+}
+
+#banner-part .banner .overlay .details {
+    position: relative;
+}
+
+#banner-part .banner .overlay a {
+    display: inline-block;
+    background: #fff;
+    color: #353535;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 20px;
+    position: relative;
+    padding-left: 50px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+
+#banner-part .banner .overlay a:hover {
+    background: #744fa0;
+    color: #fff;
+}
+
+#banner-part .banner .overlay .active {
+    background: #744fa0;
+    color: #fff;
+}
+
+#banner-part .banner .overlay .active:hover {
+    background: #fff;
+    color: #353535;
+}
+
+#banner-part .slick-dots {
+    position: absolute;
+    top: 54%;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+#banner-part .slick-dots li button {
+    font-size: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 10px 12px;
+    background: transparent;
+    position: relative;
+}
+
+#banner-part .slick-dots li.slick-active button {
+    border: 2px solid #744fa0;
+}
+
+#banner-part .slick-dots li button:after {
+    width: 8px;
+    height: 8px;
+    background: #744fa0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    content: "";
+    opacity: 0;
+}
+
+#banner-part .slick-dots .slick-active button:after {
+    opacity: 1;
+}
+
+#banner-part .banner .overlay a span {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 2px;
+}
+
+#banner-part .banner .overlay a .span1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#banner-part .banner .overlay a i {
+    font-size: 28px;
+    position: absolute;
+    top: 18px;
+    left: 13px;
+}
+
+#banner-part .banner .overlay p {
+    margin-left: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-size: 14px;
+    padding: 40px 0 30px 0;
+    max-width: 500px;
+    line-height: 24px;
+}
+
+#banner-part .banner-2 {
+    background: url(../images/banner2.jpg) no-repeat center;
+}
+
+#banner-part .banner-3 {
+    background: url(../images/banner3.jpg) no-repeat center;
+}
+
+/* ************************************BANNER END************************************ */
