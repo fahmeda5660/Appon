@@ -323,6 +323,10 @@ nav .button:hover a {
 }
 /* ************************************ABOUT END************************************ */
 /* ************************************SERVICE START************************************ */
+.service-part{
+    background: #f1f1f1;
+    padding: 56px 0 40px 0;
+}
 .service-content{
     display: flex;
 }
