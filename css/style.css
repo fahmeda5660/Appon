@@ -16,16 +16,25 @@ a {
     width: 1140px;
     margin: 0 auto;
 }
+
 /* common title */
-.common-title{
+.common-title {
     text-align: center;
     color: #353535;
     font-size: 18px;
     font-family: Raleway;
     font-weight: 600;
     text-transform: uppercase;
-    margin-top: 50px;
-    margin-bottom: 26px;
+    margin-bottom: 35px;
+}
+.space-top{
+    margin-top: 100px;
+}
+.space-top-sixty{
+    margin-top: 60px;
+}
+.space-bottom{
+    margin-bottom: 60px;
 }
 /* ************************************NAVBAR START************************************ */
 nav {
@@ -130,6 +139,9 @@ nav .button:hover a {
 /* ************************************NAVBAR END************************************ */
 
 /* ************************************BANNER START************************************ */
+#banner-part{
+    position: relative;
+}
 #banner-part .banner {
     background: url(../images/banner1.jpg) no-repeat center;
     background-size: cover;
@@ -139,7 +151,7 @@ nav .button:hover a {
     font-size: 18px;
     color: #fff;
     position: absolute;
-    top: 43%;
+    top: 41%;
     right: 51px;
     z-index: 11;
 }
@@ -307,12 +319,12 @@ nav .button:hover a {
 
 /* ************************************BANNER END************************************ */
 /* ************************************ABOUT START************************************ */
-.about-content{
+#about-part .about-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
 }
-.about-left p{
+
+#about-part .about-left p {
     padding: 0 102px 20px 102px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -321,18 +333,24 @@ nav .button:hover a {
     line-height: 24px;
     text-align: center;
 }
+/* #about-part .about-left h2{
+    margin-top: 60px;
+} */
 /* ************************************ABOUT END************************************ */
 /* ************************************SERVICE START************************************ */
-.service-part{
+#service-part {
     background: #f1f1f1;
-    padding: 56px 0 40px 0;
+    padding: 60px 0 45px 0;
 }
-.service-content{
+
+.service-content {
     display: flex;
 }
-.service-content .navigation{
+
+.service-content .navigation {
     width: 37%;
 }
+
 .service-content .navigation .item {
     position: relative;
     padding-left: 50px;
@@ -341,89 +359,110 @@ nav .button:hover a {
     cursor: pointer;
     transition: .4s;
 }
+
 .service-content .navigation .item:hover i,
 .service-content .navigation .item:hover h3,
-.service-content .navigation .item:hover p{
+.service-content .navigation .item:hover p {
     color: #744fa0;
 }
+
 .service-content .navigation .item:after {
     content: "";
     position: absolute;
     bottom: -25px;
-    left:0;
+    left: 0;
     width: 265px;
     height: 1px;
     background: #000;
     transition: .4s;
 }
+
 .service-content .navigation .item:last-child:after {
     opacity: 0;
 }
+
 .service-content .navigation .item:hover:after {
     background: #744fa0;
     width: 350px;
 }
 
-.service-content .navigation .item i{
+.service-content .navigation .item i {
     font-size: 30px;
     color: #353535;
     position: absolute;
     top: 5px;
     left: 0;
 }
-.service-content h3, .service-content .item-content .details h3 {
+
+.service-content h3,
+.service-content .item-content .details h3 {
     color: #353535;
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
+
 .service-content .item-content .details p {
     margin-top: 30px;
     margin-left: 71px;
 }
-.service-content p, .service-content .item-content .details p {
+
+.service-content p,
+.service-content .item-content .details p {
     color: #777;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 24px;
 }
+
 .service-content .item-content {
     width: 63%;
     display: flex;
     text-align: right;
 }
-.service-content .item-content .img{
+
+.service-content .item-content .img {
     width: 40%;
 }
-.service-content .item-content .img img{
+
+.service-content .item-content .img img {
     width: 100%;
     display: block;
 }
-.service-content .item-content .details{
+
+.service-content .item-content .details {
     width: 60%;
 }
-
+/* ************************************* */
+.service-content .item-content {
+    display: none;
+}
+.d-block{
+    display: block;
+}
 /* ************************************SERVICE END************************************ */
 /* ************************************SS START************************************ */
-.screenshot-part{
+#screenshot-part {
     margin-top: 100px;
 }
-.screenshot-part .image-slider img{
+
+#screenshot-part .image-slider img {
     margin: 0 10px;
 }
-.screenshot-part .slick-dots{
+
+#screenshot-part .slick-dots {
     text-align: center;
     margin-top: 50px;
 }
 
-.screenshot-part .slick-dots li{
+#screenshot-part .slick-dots li {
     display: inline-block;
     margin: 0 10px;
 }
 
-.screenshot-part .slick-dots li button{
+#screenshot-part .slick-dots li button {
     width: 20px;
     height: 20px;
     background: transparent;
@@ -433,7 +472,7 @@ nav .button:hover a {
     font-size: 0;
 }
 
-.screenshot-part .slick-dots li button:after{
+#screenshot-part .slick-dots li button:after {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -441,27 +480,30 @@ nav .button:hover a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     content: "";
     opacity: 0;
     transition: .4s;
     cursor: pointer;
 }
 
-.screenshot-part .slick-dots .slick-active button:after{
+#screenshot-part .slick-dots .slick-active button:after {
     opacity: 1;
 }
-.screenshot-part .slick-dots li.slick-active button {
+
+#screenshot-part .slick-dots li.slick-active button {
     border: 2px solid #744fa0;
 }
+
 /* ************************************SS END************************************ */
 /* **********************************VIDEO START************************************ */
-#video-part .video-bg{
+#video-part .video-bg {
     background: url(../images/video_img.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
-#video-part .video-bg .overlay{
+
+#video-part .video-bg .overlay {
     width: 100%;
     height: 100%;
     background: rgb(0, 0, 0, .8);
@@ -469,7 +511,113 @@ nav .button:hover a {
     padding: 220px 0px;
     text-align: center;
 }
-#video-part .video-bg .overlay a{
+
+#video-part .video-bg .overlay a {
     color: #744fa0;
 }
+
 /* **********************************VIDEO END************************************ */
+/* **********************************PRICE START************************************ */
+#price-part{
+    margin-top: 100px;
+}
+#price-part .price-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#price-part .price-content .item {
+    width: 23%;
+    margin-right: 10px;
+}
+
+#price-part .price-content .item h3 {
+    background: #f1f1f1;
+    padding: 19px 0;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #353535;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#price-part .price-content .item:hover h3{
+    background: #744fa0;
+    color: #fff;
+}
+#price-part .item .box {
+    border: 1px solid #f1f1f1;
+}
+#price-part .item .box .round {
+    width: 110px;
+    height: 110px;
+    border: 3px solid #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#price-part .price-content .item .price h5 {
+    color: #353535;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#price-part .price-content .item .price span {
+    font-size: 42px;
+}
+
+#price-part .price-content .item .price p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #555;
+}
+
+#price-part .price-content .item ul{
+    background:  #f1f1f1;
+    padding: 35px 0 50px 0;
+    line-height: 24px;
+    color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    border-radius: 0 0 15px 15px;
+}
+#price-part .price-content .item ul li{
+    text-align: center;
+}
+#price-part .item .button{
+    text-align: center;
+    transition: .4s;
+}
+
+#price-part .item .button a{
+    padding: 6px 10px;
+    border: 1px solid #353535;
+    border-radius: 3px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #353535;
+    transform: translateY(-50%);
+    transition: .4s;
+}
+
+#price-part .item:hover h2{
+    background: #744fa0;
+    color: #fff;
+    
+}
+
+#price-part .item:hover .button a{
+    background: #744fa0;
+    color: #fff;
+    border-color:#744fa0;;
+}
+/* **********************************PRICE END************************************ */
