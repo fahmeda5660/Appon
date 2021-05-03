@@ -27,15 +27,23 @@ a {
     text-transform: uppercase;
     margin-bottom: 35px;
 }
-.space-top{
+
+.space-top {
     margin-top: 100px;
 }
-.space-top-sixty{
+
+.space-top-sixty {
     margin-top: 60px;
 }
-.space-bottom{
+
+.space-top-80 {
+    margin-top: 80px;
+}
+
+.space-bottom {
     margin-bottom: 60px;
 }
+
 /* ************************************NAVBAR START************************************ */
 nav {
     position: absolute;
@@ -139,9 +147,10 @@ nav .button:hover a {
 /* ************************************NAVBAR END************************************ */
 
 /* ************************************BANNER START************************************ */
-#banner-part{
+#banner-part {
     position: relative;
 }
+
 #banner-part .banner {
     background: url(../images/banner1.jpg) no-repeat center;
     background-size: cover;
@@ -333,6 +342,7 @@ nav .button:hover a {
     line-height: 24px;
     text-align: center;
 }
+
 /* #about-part .about-left h2{
     margin-top: 60px;
 } */
@@ -348,7 +358,7 @@ nav .button:hover a {
 }
 
 .service-content .navigation {
-    width: 37%;
+    width: 54%;
 }
 
 .service-content .navigation .item {
@@ -386,6 +396,7 @@ nav .button:hover a {
     width: 350px;
 }
 
+
 .service-content .navigation .item i {
     font-size: 30px;
     color: #353535;
@@ -405,7 +416,7 @@ nav .button:hover a {
 
 .service-content .item-content .details p {
     margin-top: 30px;
-    margin-left: 71px;
+    padding-left: 45px;
 }
 
 .service-content p,
@@ -418,30 +429,42 @@ nav .button:hover a {
 }
 
 .service-content .item-content {
-    width: 63%;
     display: flex;
     text-align: right;
+    margin-left: 19%;
 }
 
 .service-content .item-content .img {
-    width: 40%;
+    width: 60%;
 }
 
 .service-content .item-content .img img {
-    width: 100%;
+    width: 82%;
+    height: 442px;
     display: block;
 }
 
 .service-content .item-content .details {
-    width: 60%;
+    width: 79%;
 }
-/* ************************************* */
-.service-content .item-content {
-    display: none;
+
+/* *******************Feature Active:MixItUp***************** */
+
+.mixitup-control-active .mixi-active {
+    color: #744fa0 !important;
 }
-.d-block{
-    display: block;
+
+.mixitup-control-active::before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    background: #744fa0 !important;
+    width: 350px;
+    height: 1px;
+    z-index: 999;
 }
+
 /* ************************************SERVICE END************************************ */
 /* ************************************SS START************************************ */
 #screenshot-part {
@@ -518,9 +541,10 @@ nav .button:hover a {
 
 /* **********************************VIDEO END************************************ */
 /* **********************************PRICE START************************************ */
-#price-part{
+#price-part {
     margin-top: 100px;
 }
+
 #price-part .price-content {
     display: flex;
     justify-content: space-between;
@@ -543,13 +567,16 @@ nav .button:hover a {
     font-weight: 700;
     text-transform: uppercase;
 }
-#price-part .price-content .item:hover h3{
+
+#price-part .price-content .item:hover h3 {
     background: #744fa0;
     color: #fff;
 }
+
 #price-part .item .box {
     border: 1px solid #f1f1f1;
 }
+
 #price-part .item .box .round {
     width: 110px;
     height: 110px;
@@ -579,8 +606,8 @@ nav .button:hover a {
     color: #555;
 }
 
-#price-part .price-content .item ul{
-    background:  #f1f1f1;
+#price-part .price-content .item ul {
+    background: #f1f1f1;
     padding: 35px 0 50px 0;
     line-height: 24px;
     color: #555555;
@@ -588,15 +615,17 @@ nav .button:hover a {
     font-size: 14px;
     border-radius: 0 0 15px 15px;
 }
-#price-part .price-content .item ul li{
+
+#price-part .price-content .item ul li {
     text-align: center;
 }
-#price-part .item .button{
+
+#price-part .item .button {
     text-align: center;
     transition: .4s;
 }
 
-#price-part .item .button a{
+#price-part .item .button a {
     padding: 6px 10px;
     border: 1px solid #353535;
     border-radius: 3px;
@@ -609,15 +638,15 @@ nav .button:hover a {
     transition: .4s;
 }
 
-#price-part .item:hover h2{
+#price-part .item:hover h2 {
     background: #744fa0;
     color: #fff;
-    
 }
 
-#price-part .item:hover .button a{
+#price-part .item:hover .button a {
     background: #744fa0;
     color: #fff;
-    border-color:#744fa0;;
+    border-color: #744fa0;
 }
+
 /* **********************************PRICE END************************************ */
