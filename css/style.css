@@ -32,12 +32,16 @@ a {
     margin-top: 100px;
 }
 
-.space-top-sixty {
+.space-top-60 {
     margin-top: 60px;
 }
 
 .space-top-80 {
     margin-top: 80px;
+}
+
+.space-top-235 {
+    margin-top: 235px;
 }
 
 .space-bottom {
@@ -650,3 +654,201 @@ nav .button:hover a {
 }
 
 /* **********************************PRICE END************************************ */
+/* **********************************TEAM START************************************ */
+#team-part .team {
+    display: flex;
+    justify-content: space-between;
+}
+
+#team-part .member {
+    width: 31%;
+    position: relative;
+}
+
+#team-part .member .img {
+    /* height: 300px;
+    background: rgb(228, 15, 15); --> display:block */
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: .4s;
+}
+
+#team-part .member .img img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    position: relative;
+}
+
+#team-part .member .text {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .4s;
+}
+
+#team-part .member .text h2 {
+    color: #353535;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#team-part .member .text h3 {
+    color: #999;
+    font-size: 15px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+    padding: 8px 0 10px 0;
+    text-transform: capitalize;
+}
+
+#team-part .member .text p {
+    color: #777;
+    font-size: 14px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    padding: 0 52px;
+}
+
+#team-part .member:hover .img {
+    top: -50px;
+}
+
+#team-part .member:hover .img img {
+    border-radius: 15px 15px 0 0;
+}
+
+#team-part .member:hover .text {
+    top: 83%;
+    border-radius: 0px 0px 15px 15px;
+}
+
+#team-part .member:hover .img .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#team-part .member .img .overlay .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+#team-part .member:hover .img .overlay .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+#team-part .member .img .overlay .icon i {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    text-align: center;
+    line-height: 50px;
+    color: #353535;
+    font-size: 24px;
+    margin: 0 3px;
+}
+
+#team-part .member .img .overlay .icon i:hover {
+    background: #744fa0;
+    color: #fff;
+}
+
+/* **********************************TEAM END************************************ */
+/* **********************************CONTACT START************************************ */
+#contact-part .main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-part input {
+    width: 32%;
+    padding: 15px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#contact-part textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    resize: none;
+}
+
+#contact-part .button {
+    text-align: center;
+}
+
+#contact-part .button button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #744fa0;
+    border: 0;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* **********************************CONTACT END************************************ */
+#footer-part {
+    background: #353535;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#footer-part .icon i {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    text-align: center;
+    line-height: 50px;
+    color: #353535;
+    font-size: 24px;
+    margin: 20px 4px;
+}
+
+#footer-part .icon i:hover {
+    background: #744fa0;
+    color: #fff;
+}
+
+#footer-part p {
+    color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#footer-part span {
+    color: #744fa0;
+}
