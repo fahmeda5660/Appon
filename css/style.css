@@ -89,6 +89,7 @@ nav .nav-item ul li {
 nav .nav-item ul li a {
     color: #fdfdfe;
     position: relative;
+    transition: .4s;
 }
 
 nav .nav-item ul li .active {
@@ -140,6 +141,7 @@ nav .button a {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     text-transform: capitalize;
+    transition: .4s;
 }
 
 nav .button:hover a {
@@ -167,6 +169,7 @@ nav .button:hover a {
     top: 41%;
     right: 51px;
     z-index: 11;
+    transition: .4s;
 }
 
 #banner-part .home:hover {
@@ -234,6 +237,7 @@ nav .button:hover a {
     border-radius: 5px;
     margin-top: 30px;
     margin-left: 12px;
+    transition: .4s;
 }
 
 #banner-part .banner .overlay a:hover {
@@ -244,6 +248,7 @@ nav .button:hover a {
 #banner-part .banner .overlay .active {
     background: #744fa0;
     color: #fff;
+    transition: .4s;
 }
 
 #banner-part .banner .overlay .active:hover {
@@ -663,6 +668,7 @@ nav .button:hover a {
 #team-part .member {
     width: 31%;
     position: relative;
+    transition: .4s;
 }
 
 #team-part .member .img {
@@ -770,6 +776,7 @@ nav .button:hover a {
     color: #353535;
     font-size: 24px;
     margin: 0 3px;
+    transition: .4s;
 }
 
 #team-part .member .img .overlay .icon i:hover {
@@ -813,9 +820,20 @@ nav .button:hover a {
     padding: 10px 20px;
     border-radius: 6px;
     background: #744fa0;
+    color: #fefefe;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
     border: 0;
     color: #fff;
     margin-top: 20px;
+    transition: .4s;
+}
+#contact-part .button button:hover {
+    color: #744fa0;
+    background: #ffffff;
+    border: 1px solid #744fa0;
 }
 
 /* **********************************CONTACT END************************************ */
@@ -835,6 +853,7 @@ nav .button:hover a {
     color: #353535;
     font-size: 24px;
     margin: 20px 4px;
+    transition: .4s;
 }
 
 #footer-part .icon i:hover {
