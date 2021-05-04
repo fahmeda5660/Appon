@@ -27,5 +27,8 @@ $(document).ready(function() {
     mixer.filter('.item-content-1');
     
 });
-   
+// ************************WOW************************
 
+$(document).ready(function(){
+    new WOW().init();
+});
