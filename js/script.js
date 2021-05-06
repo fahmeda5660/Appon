@@ -10,6 +10,22 @@ $(".image-slider").slick({
     dots: true,
     slidesToShow: 5,
 });
+// ************************FEEDBACK************************
+$(".text-slider").slick({
+    arrows: false,
+    dots: false,
+    slidesToShow: 1,
+    asNavFor: ".testi-img-slider", 
+})
+
+$(".testi-img-slider").slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: "0",
+    asNavFor: ".text-slider",
+})
 // ************************VENOBOX************************
 $('.venobox').venobox(); 
 
